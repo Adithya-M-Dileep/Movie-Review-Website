@@ -28,7 +28,9 @@ body{
     border-radius: 50px;
     padding: 0.5em 1em;
     border-color: var(--secondaryColor);
-
+}
+#form{
+    margin-right: 5%;
 }
 input:focus{
     border-color:var(--specialOraneg);
