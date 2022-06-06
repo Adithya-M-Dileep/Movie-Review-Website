@@ -1,7 +1,7 @@
 const API_key="api_key=120a1b9df4408d5503a407ab7d053e82";
 const Base_URL="https://api.themoviedb.org/3"
 const ImageBase_URL="https://image.tmdb.org/t/p/w500"
-const PopularMoviesUrl=Base_URL+"/discover/movie?sort_by=popularity.desc&"+API_key
+const PopularMoviesUrl=Base_URL+"/trending/all/day?"+API_key
 const searchBase_URL=Base_URL+"/search/movie?"+API_key
 
 const main =document.getElementById("main");
@@ -10,6 +10,7 @@ const search=document.getElementById("search");
 const home1=document.getElementById("home1");
 const home2=document.getElementById("home2");
 const kids=document.getElementById("kids");
+const moviesButton=document.getElementById("moviesButton");
 const TVshows=document.getElementById("TVshows");
 
 getMovies(PopularMoviesUrl);
@@ -66,6 +67,10 @@ home2.addEventListener("click",()=>{
 kids.addEventListener("click",()=>{
     const kidsURL=Base_URL+"/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&"+API_key;
     getMovies(kidsURL);
+})
+moviesButton.addEventListener("click",()=>{
+    const movieURL=Base_URL+"/trending/movie/day?"+API_key;
+    getMovies(movieURL);
 })
 TVshows.addEventListener("click",()=>{
     const tvShowURL=Base_URL+"/tv/popular?&"+API_key;

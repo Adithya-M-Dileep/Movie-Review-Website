@@ -9,11 +9,16 @@ body{
     margin: 0%;
 }
 .heading{
-    margin: 0% 0% 1%;
+    margin: 0% 0% 2%;
     background-color: var(--primaryColor);
     padding: 1.2em 3em;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
 }
 #search{
     height: 1.75em;
@@ -61,6 +66,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     padding: 2em;
+    margin-top: 5%;
 }
 .movie{
     width: 300px;
@@ -83,9 +89,11 @@ main{
     margin: 0%;
 }
 .movieInfo span{
-    vertical-align: middle;
     background-color: var(--secondaryColor);
+    width: 20px;
+    height: 18px;
     padding: 0.25em 0.5em;
+    text-align: center;
 }
 .movieInfo span.green{
     color: #5FD068;
