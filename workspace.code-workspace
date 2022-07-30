@@ -1,9 +1,9 @@
 {
   "folders": [
-	{
-		"path": "."
-	}
-],
+    {
+      "path": "..\\personalWebsite"
+    }
+  ],
   "settings": {
     "files.associations": {
       "iostream": "cpp",
