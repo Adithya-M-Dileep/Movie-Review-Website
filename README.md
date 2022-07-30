@@ -5,3 +5,6 @@
  - Popular movies section
  - Search by name
  - filter by Category
+
+##Screenshot
+<p align="center"><img src="Screenshot.png"></p>
